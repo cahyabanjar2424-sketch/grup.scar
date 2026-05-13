@@ -1,0 +1,212 @@
+/* Import Google Fonts (Quicksand for a cute, round aesthetic) */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  /* Cute Soft Pink-Peach Gradient Background */
+  background: linear-gradient(135deg, #fff0f5, #ffe4e1, #fff5e6, #f8f8ff) !important;
+  background-size: 300% 300% !important;
+  animation: gradient-shift 12s ease infinite !important;
+  color: #8b5a83 !important; /* Soft dark magenta text */
+  transition: color 0.3s ease;
+}
+
+/* Cute Polka Dot Overlay */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background-image: radial-gradient(#ffb6c1 1.5px, transparent 1.5px);
+  background-size: 25px 25px;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.4;
+}
+
+/* ==================================================== */
+/* CONTINUOUS ANIMATIONS (KEYFRAMES)                    */
+/* ==================================================== */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes float-blob {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  33% { transform: translate(40px, -60px) scale(1.1) rotate(10deg); }
+  66% { transform: translate(-30px, 30px) scale(0.9) rotate(-5deg); }
+  100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+}
+
+/* Animated Pastel Blobs */
+.bg-shape {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(60px);
+  z-index: -1;
+  opacity: 0.6;
+}
+.shape1 { width: 400px; height: 400px; background: #ffb6c1; top: -100px; left: -100px; animation: float-blob 14s infinite ease-in-out; }
+.shape2 { width: 500px; height: 500px; background: #e6e6fa; bottom: -150px; right: -100px; animation: float-blob 16s infinite ease-in-out reverse; }
+.shape3 { width: 350px; height: 350px; background: #ffdab9; top: 30%; left: 40%; animation: float-blob 18s infinite ease-in-out; }
+
+/* ==================================================== */
+/* CUTE UI ELEMENTS                                     */
+/* ==================================================== */
+
+/* Cute Cards */
+.bg-white, .card {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border: 3px dashed #ffb6c1 !important; /* Cute dashed border */
+  border-radius: 30px !important; /* Very rounded */
+  box-shadow: 0 10px 25px rgba(255, 182, 193, 0.3) !important;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  backdrop-filter: blur(8px);
+}
+.bg-white:hover {
+  transform: translateY(-8px) scale(1.02) !important;
+  box-shadow: 0 15px 35px rgba(255, 182, 193, 0.6) !important;
+  border-color: #ff69b4 !important;
+}
+
+/* Cute Gradient Buttons */
+.bg-blue-600 {
+  background: linear-gradient(135deg, #ff9a9e, #fecfef) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 9999px !important;
+  box-shadow: 0 6px 15px rgba(255, 154, 158, 0.5) !important;
+  transition: all 0.3s ease !important;
+  font-weight: 700 !important;
+}
+.bg-blue-600:hover {
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 10px 20px rgba(255, 154, 158, 0.8) !important;
+}
+.text-blue-600 { color: #ff69b4 !important; }
+
+/* Text Styles */
+.text-gray-900, .text-gray-800 { color: #8b5a83 !important; }
+.text-gray-600, .text-gray-500 { color: #b784a7 !important; }
+
+/* Profile Morph Animation */
+.profile-morph {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40% !important;
+  animation: morph 6s ease-in-out infinite !important;
+  border: 5px solid #ffb6c1 !important;
+  box-shadow: 0 0 15px rgba(255, 182, 193, 0.6) !important;
+  transition: all 0.5s ease !important;
+  padding: 4px;
+  background: #fff;
+}
+.profile-morph:hover {
+  border-radius: 50% !important;
+  transform: scale(1.15) rotate(-5deg) !important;
+  border-color: #ff69b4 !important;
+  box-shadow: 0 0 25px #ff69b4 !important;
+}
+
+@keyframes morph {
+  0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+  100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+}
+
+/* Cute Text Shimmer */
+.text-gradient {
+  background: linear-gradient(to right, #ff69b4 20%, #dda0dd 40%, #ff1493 60%, #ff69b4 80%) !important;
+  background-size: 200% auto !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  animation: shine-text 3s linear infinite !important;
+}
+@keyframes shine-text { to { background-position: 200% center; } }
+
+/* Dreamy Dark Mode (Night Sky Aesthetic) */
+html.dark body, html.dark .bg-gray-50 {
+  background: linear-gradient(135deg, #1a0b2e, #2d1b4e, #1a0b2e) !important;
+  color: #ffe4e1 !important;
+}
+html.dark body::after {
+  background-image: radial-gradient(#dda0dd 1px, transparent 1px);
+  opacity: 0.15;
+}
+html.dark .shape1 { background: #4b0082; }
+html.dark .shape2 { background: #191970; }
+html.dark .shape3 { background: #800080; }
+
+html.dark .bg-white, html.dark .card {
+  background: rgba(45, 27, 78, 0.6) !important;
+  border-color: #dda0dd !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
+}
+html.dark .bg-white:hover { border-color: #ffb6c1 !important; }
+html.dark .text-gray-900, html.dark .text-gray-800 { color: #fff0f5 !important; }
+html.dark .text-gray-600, html.dark .text-gray-500 { color: #d8bfd8 !important; }
+html.dark .profile-morph { border-color: #dda0dd !important; background: #2d1b4e; }
+html.dark .profile-morph:hover { border-color: #ffb6c1 !important; }
+html.dark input[type="text"] { background: rgba(45, 27, 78, 0.8) !important; color: #fff0f5 !important; border: 2px dashed #dda0dd !important; }
+
+/* Scrollbar Customization */
+::-webkit-scrollbar { width: 12px; }
+::-webkit-scrollbar-track { background: #fff0f5; }
+::-webkit-scrollbar-thumb { background: linear-gradient(to bottom, #ffb6c1, #ff69b4); border-radius: 10px; }
+html.dark ::-webkit-scrollbar-track { background: #1a0b2e; }
+html.dark ::-webkit-scrollbar-thumb { background: linear-gradient(to bottom, #dda0dd, #8a2be2); }
+
+/* ==================================================== */
+/* CUTE FLOATING BACKGROUND ELEMENTS                    */
+/* ==================================================== */
+.cute-bg-container {
+  position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+  z-index: -1; pointer-events: none;
+}
+.sparkle {
+  position: absolute; font-size: 2rem; opacity: 0.6;
+  animation: float-sparkle 8s ease-in-out infinite alternate;
+}
+.s1 { top: 10%; left: 10%; animation-duration: 7s; }
+.s2 { top: 30%; right: 15%; animation-duration: 9s; font-size: 3rem; }
+.s3 { bottom: 20%; left: 20%; animation-duration: 11s; font-size: 2.5rem; }
+.s4 { bottom: 30%; right: 10%; animation-duration: 8s; }
+.s5 { top: 50%; left: 5%; animation-duration: 10s; font-size: 2rem; }
+
+@keyframes float-sparkle {
+  0% { transform: translateY(0) rotate(0deg) scale(1); }
+  100% { transform: translateY(-50px) rotate(20deg) scale(1.2); }
+}
+
+/* Floating Hearts in Struktur Organisasi */
+.org-bg-anim { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; overflow: hidden; }
+.floating-heart {
+  position: absolute; font-size: 2.5rem; opacity: 0.4;
+  animation: float-up 12s linear infinite;
+}
+.h1 { left: 10%; animation-duration: 12s; animation-delay: 0s; }
+.h2 { left: 30%; animation-duration: 9s; animation-delay: 2s; font-size: 3rem; }
+.h3 { left: 50%; animation-duration: 15s; animation-delay: 1s; }
+.h4 { left: 70%; animation-duration: 10s; animation-delay: 4s; font-size: 4rem; }
+.h5 { left: 90%; animation-duration: 11s; animation-delay: 0.5s; }
+
+@keyframes float-up {
+  0% { transform: translateY(100vh) rotate(0deg) scale(0.8); opacity: 0; }
+  10% { opacity: 0.6; }
+  80% { opacity: 0.6; }
+  100% { transform: translateY(-20vh) rotate(45deg) scale(1.2); opacity: 0; }
+}
+
+/* Base floating animations */
+@keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-12px); } 100% { transform: translateY(0px); } }
+@keyframes float-rotate { 0% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-10px) rotate(2deg); } 100% { transform: translateY(0px) rotate(0deg); } }
+@keyframes pulse-glow { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+.floating { animation: float 4s ease-in-out infinite; }
+.floating-delayed { animation: float 5s ease-in-out infinite 2s; }
+.floating-rotate { animation: float-rotate 6s ease-in-out infinite; }
+.pulse-btn { animation: pulse-glow 3s infinite !important; }

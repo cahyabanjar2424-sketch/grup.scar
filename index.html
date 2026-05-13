@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Kelas X TKJ | The Future of Networking</title>
+    <meta name="description" content="Website profil resmi kelas X Teknik Komputer dan Jaringan SMKN 2 Marabahan.">
+    
+    <!-- Tailwind CSS (CDN for simple static sites) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden selection:bg-blue-500 selection:text-white">
+
+    <!-- Animated Background Shapes -->
+    <div class="bg-shape shape1"></div>
+    <div class="bg-shape shape2"></div>
+    <div class="bg-shape shape3"></div>
+
+    <!-- Cute Background Sparkles -->
+    <div class="cute-bg-container">
+        <div class="sparkle s1">✨</div>
+        <div class="sparkle s2">🌸</div>
+        <div class="sparkle s3">🎀</div>
+        <div class="sparkle s4">✨</div>
+        <div class="sparkle s5">🌷</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#">
+                        <img src="logo.jpeg" alt="Logo X TKJ" class="h-10 w-auto object-contain">
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#hero" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Beranda</a>
+                    <a href="#tentang" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Tentang</a>
+                    <a href="#struktur" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Struktur</a>
+                    <a href="#galeri" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Galeri</a>
+                    
+                    <!-- Dark Mode Toggle -->
+                    <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 transition-colors">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    </button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-500 hover:text-gray-900 focus:outline-none p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 flex items-center min-h-screen">
+        <div class="absolute inset-0 z-0">
+            <!-- Background Image Placeholder (Technology/Networking theme) -->
+            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=2070&auto=format&fit=crop" alt="Networking Background" class="w-full h-full object-cover opacity-20 dark:opacity-10">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-gray-50 dark:to-navy-900"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-600 text-sm font-semibold mb-6 tracking-wider shadow-sm" data-aos="fade-down">
+                SMKN 2 MARABAHAN
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 tracking-tight mb-6 floating" data-aos="fade-up" data-aos-delay="100">
+                KELAS <span class="text-gradient">X TKJ</span>
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto font-light" data-aos="fade-up" data-aos-delay="200">
+                "The Future of Networking"
+            </p>
+            <div class="mt-10 flex justify-center gap-4" data-aos="fade-up" data-aos-delay="300">
+                <a href="#struktur" class="pulse-btn px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    Pengurus Kelas
+                </a>
+                <a href="#galeri" class="px-8 py-3 border border-gray-300 text-base font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 shadow-sm transition-all duration-300">
+                    Galeri Kelas
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami Section -->
+    <section id="tentang" class="py-20 bg-white dark:bg-navy-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Tentang Kelas Kami</h2>
+                <div class="mt-2 w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right" class="floating-rotate">
+                    <img src="ber4.jpeg" alt="Foto Kelas Kami" class="rounded-2xl shadow-xl border-4 border-gray-50 dark:border-navy-700 object-cover w-full">
+                </div>
+                <div data-aos="fade-left">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Membangun Fondasi Masa Depan</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Kelas X Teknik Komputer dan Jaringan (TKJ) di SMKN 2 Marabahan adalah tempat di mana kami mempelajari dasar-dasar perangkat keras komputer, sistem operasi, dan jaringan dasar. Kami dipersiapkan untuk menjadi teknisi jaringan yang andal dan profesional.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-gray-50 dark:bg-navy-900 p-6 rounded-xl border border-gray-100 dark:border-navy-700 shadow-sm">
+                            <i class="fas fa-eye text-3xl text-blue-500 mb-4"></i>
+                            <h4 class="font-bold text-gray-900 mb-2">Visi</h4>
+                            <p class="text-sm text-gray-600">Menjadi kelas unggulan yang mencetak teknisi jaringan kompeten dan berakhlak mulia.</p>
+                        </div>
+                        <div class="bg-gray-50 dark:bg-navy-900 p-6 rounded-xl border border-gray-100 dark:border-navy-700 shadow-sm">
+                            <i class="fas fa-rocket text-3xl text-blue-500 mb-4"></i>
+                            <h4 class="font-bold text-gray-900 mb-2">Misi</h4>
+                            <p class="text-sm text-gray-600">Disiplin dalam belajar, aktif dalam praktik, dan inovatif dalam memecahkan masalah IT.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Struktur Organisasi Section -->
+    <section id="struktur" class="py-20 bg-gray-50 dark:bg-navy-900 relative overflow-hidden">
+        <!-- Cute Floating Hearts Background -->
+        <div class="org-bg-anim">
+            <div class="floating-heart h1">💖</div>
+            <div class="floating-heart h2">💕</div>
+            <div class="floating-heart h3">💓</div>
+            <div class="floating-heart h4">💗</div>
+            <div class="floating-heart h5">💞</div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Struktur Organisasi</h2>
+                <div class="mt-2 w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
+                <p class="mt-4 text-lg text-gray-600">Pengurus Inti Kelas X TKJ</p>
+            </div>
+
+            <!-- Wali Kelas -->
+            <div class="flex justify-center mb-12" data-aos="zoom-in">
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-blue-100 text-center w-64 relative floating">
+                    <div class="absolute -top-3 right-0 left-0 flex justify-center">
+                        <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">WALI KELAS</span>
+                    </div>
+                    <img src="walas.jpeg" alt="Wali Kelas" class="w-24 h-24 profile-morph object-cover mx-auto mb-4 border-4 border-gray-50 floating-delayed">
+                    <h3 class="font-bold text-gray-900 text-lg">HERLYANA S.Pd</h3>
+                    <p class="text-sm text-gray-500">-</p>
+                </div>
+            </div>
+
+            <!-- Pengurus Inti -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Ketua -->
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 text-center hover:-translate-y-2 transition-transform duration-300 floating-delayed" data-aos="fade-up" data-aos-delay="100">
+                    <img src="cahya.jpeg" alt="Ketua" class="w-20 h-20 profile-morph object-cover mx-auto mb-4 border-4 border-blue-50 floating">
+                    <h3 class="font-bold text-gray-900">Cahya Delina Purwaningsih</h3>
+                    <p class="text-sm font-medium text-blue-600 mt-1">Ketua Kelas</p>
+                </div>
+                <!-- Wakil -->
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 text-center hover:-translate-y-2 transition-transform duration-300 floating" data-aos="fade-up" data-aos-delay="200">
+                    <img src="sipatu.jpeg" alt="Wakil" class="w-20 h-20 profile-morph object-cover mx-auto mb-4 border-4 border-blue-50 floating-delayed">
+                    <h3 class="font-bold text-gray-900">Norrisda assyifa</h3>
+                    <p class="text-sm font-medium text-blue-600 mt-1">Wakil Ketua</p>
+                </div>
+                <!-- Sekretaris -->
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 text-center hover:-translate-y-2 transition-transform duration-300 floating-delayed" data-aos="fade-up" data-aos-delay="300">
+                    <img src="saida.jpeg" alt="Sekretaris" class="w-20 h-20 profile-morph object-cover mx-auto mb-4 border-4 border-red-50 floating">
+                    <h3 class="font-bold text-gray-900">Saidatul Khorimah</h3>
+                    <p class="text-sm font-medium text-red-500 mt-1">Sekretaris</p>
+                </div>
+                <!-- Bendahara -->
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 text-center hover:-translate-y-2 transition-transform duration-300 floating" data-aos="fade-up" data-aos-delay="400">
+                    <img src="rihil.jpeg" alt="Bendahara" class="w-20 h-20 profile-morph object-cover mx-auto mb-4 border-4 border-green-50 floating-delayed">
+                    <h3 class="font-bold text-gray-900">Rahil Amanda</h3>
+                    <p class="text-sm font-medium text-green-500 mt-1">Bendahara</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Section -->
+    <section id="galeri" class="py-20 bg-gray-50 dark:bg-navy-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Galeri Kegiatan</h2>
+                <div class="mt-2 w-24 h-1 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Item 1 -->
+                <div class="group relative overflow-hidden rounded-xl aspect-video cursor-pointer shadow-sm" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop" alt="Praktikum Jaringan" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <h3 class="text-white font-bold text-lg">Praktikum Crimping Kabel</h3>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="group relative overflow-hidden rounded-xl aspect-video cursor-pointer shadow-sm" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1974&auto=format&fit=crop" alt="Perakitan PC" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <h3 class="text-white font-bold text-lg">Perakitan PC</h3>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="group relative overflow-hidden rounded-xl aspect-video cursor-pointer shadow-sm" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" alt="Kerja Kelompok" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <h3 class="text-white font-bold text-lg">Diskusi Kelompok</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact -->
+    <footer class="bg-navy-900 text-white pt-16 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div data-aos="fade-up">
+                    <h3 class="text-2xl font-bold mb-4">Kelas X TKJ</h3>
+                    <p class="text-gray-400 mb-6">Website resmi kelas X Teknik Komputer dan Jaringan SMKN 2 Marabahan. "The Future of Networking".</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold mb-4 border-b border-gray-700 pb-2 inline-block">Tautan Cepat</h3>
+                    <ul class="space-y-2 mt-4 text-gray-400">
+                        <li><a href="#hero" class="hover:text-blue-400 transition-colors"><i class="fas fa-chevron-right text-xs mr-2"></i>Beranda</a></li>
+                        <li><a href="#tentang" class="hover:text-blue-400 transition-colors"><i class="fas fa-chevron-right text-xs mr-2"></i>Tentang Kami</a></li>
+                        <li><a href="#siswa" class="hover:text-blue-400 transition-colors"><i class="fas fa-chevron-right text-xs mr-2"></i>Daftar Siswa</a></li>
+                        <li><a href="#galeri" class="hover:text-blue-400 transition-colors"><i class="fas fa-chevron-right text-xs mr-2"></i>Galeri Kegiatan</a></li>
+                    </ul>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold mb-4 border-b border-gray-700 pb-2 inline-block">Kontak Kami</h3>
+                    <ul class="space-y-4 mt-4 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1.5 mr-3 text-blue-500"></i>
+                            <span>SMKN 2 Marabahan<br>Jl. Pahlawan, Marabahan<br>Barito Kuala, Kalimantan Selatan</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-blue-500"></i>
+                            <a href="mailto:info@smkn2marabahan.sch.id" class="hover:text-white transition-colors">info@smkn2marabahan.sch.id</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; 2026 Kelas X TKJ SMKN 2 Marabahan. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Didesain dengan <i class="fas fa-heart text-red-500 mx-1"></i> menggunakan Tailwind CSS</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
